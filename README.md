@@ -20,7 +20,7 @@ Plugin for PocketMine-MP that logs all player commands and censors commands for 
 
 ## Requirements
 
-* PocketMine-MP Alpha_1.4 API 1.10.0 or greater
+* PocketMine-MP API 3.0.0 ALPHA 11 or greater
 
 ## Documentation 
 
