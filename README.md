@@ -1,4 +1,4 @@
-#CommandTracker v1.1
+# CommandTracker v1.1
 
 Plugin for PocketMine-MP that logs all player commands and censors commands for inappropriate language. 
    
