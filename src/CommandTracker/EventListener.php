@@ -24,8 +24,7 @@ use LogLevel;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerCommandPreprocessEvent;
-use pocketmine\event\server\ServerCommandEvent;
-use pocketmine\event\server\RemoteServerCommandEvent;
+use pocketmine\event\server\CommandEvent;
 use pocketmine\utils\TextFormat;
  
 class EventListener extends PluginBase implements Listener
@@ -83,13 +82,13 @@ class EventListener extends PluginBase implements Listener
             
     } /* onPlayerCommand */
         
-    public function onServerCommand(ServerCommandEvent $event)
+    public function onServerCommand(CommandEvent $event)
     {
         $this->logConsoleCommand("CONSOLE", $event->getCommand()); 
         
     } /* onServerCommand */
 
-    public function onRemoteCommand(RemoteServerCommandEvent $event)
+    public function onRemoteCommand(CommandEvent $event)
     {  
         $this->logConsoleCommand("REMOTE", $event->getCommand()); 
         
