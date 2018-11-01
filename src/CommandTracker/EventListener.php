@@ -21,14 +21,12 @@
 namespace CommandTracker;
 
 use LogLevel;
-use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerCommandPreprocessEvent;
 use pocketmine\event\server\CommandEvent;
 use pocketmine\utils\TextFormat;
  
-class EventListener extends PluginBase implements Listener
-{
+class EventListener implements Listener{
                 
     public function __construct(CommandTracker $plugin)
     {
